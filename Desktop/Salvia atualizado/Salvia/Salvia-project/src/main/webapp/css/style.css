@@ -1,0 +1,97 @@
+:root {
+    --primary-color: #0079C7;
+    --secondary-color: #6c757d;
+    --success-color: #198754;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.smartwatch-mockup {
+    width: 300px;
+    height: 300px;
+    background: #1a1a1a;
+    border-radius: 50px;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    border: 8px solid #333;
+}
+
+.watch-screen {
+    width: 260px;
+    height: 260px;
+    background: #000;
+    border-radius: 30px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    overflow: hidden;
+}
+
+.screen-content {
+    padding: 20px;
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.assistencia-option, .ponteiro-option, .vibracao-option, .som-option {
+    padding: 10px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.assistencia-option:hover, .ponteiro-option:hover, .vibracao-option:hover, .som-option:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #0066a7;
+    border-color: #0066a7;
+}
+
+section {
+    scroll-margin-top: 76px;
+}
+
+@media (max-width: 768px) {
+    .smartwatch-mockup {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .watch-screen {
+        width: 210px;
+        height: 210px;
+    }
+}
